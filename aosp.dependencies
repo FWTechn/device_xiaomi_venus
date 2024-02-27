@@ -1,0 +1,34 @@
+[
+  {
+    "repository": "device_xiaomi_sm8350-common",
+    "target_path": "device/xiaomi/sm8350-common"
+  },
+  {
+    "repository": "vendor_xiaomi_sm8350-common",
+    "target_path": "vendor/xiaomi/sm8350-common"
+  },
+  {
+    "repository": "vendor_xiaomi_venus",
+    "target_path": "vendor/xiaomi/venus"
+  },
+  {
+    "repository": "fwtechn/vendor_xiaomi_venus-firmware",
+    "target_path": "vendor/xiaomi/venus-firmware",
+    "branch": "master"
+  },
+  {
+    "repository": "fwtechn/vendor_gcam",
+    "target_path": "vendor/gcam",
+    "branch": "master"
+  },
+  {
+    "repository": "kernel_xiaomi_venus",
+    "target_path": "kernel/xiaomi/venus"
+  },
+  {
+    "repository": "jjpprrrr/prelude-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-prelude",
+    "branch": "master",
+    "remote": "gitlab"
+  }
+]
