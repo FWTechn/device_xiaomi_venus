@@ -23,20 +23,14 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 175
 TARGET_OTA_ASSERT_DEVICE := venus
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/venus
-TARGET_KERNEL_CONFIG := vendor/venus-qgki_defconfig
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude
-TARGET_KERNEL_CLANG_VERSION := prelude
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
-KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_CONFIG += vendor/venus_QGKI.config
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \
     hwid.ko \
+    msm_drm.ko \
     xiaomi_touch.ko
-
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 # Partitions
@@ -51,5 +45,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 
 # Include proprietary files
 -include vendor/xiaomi/venus/BoardConfigVendor.mk
--include vendor/xiaomi/venus-firmware/BoardConfigVendor.mk
--include vendor/gcam/BoardConfigVendor.mk
+-include vendor/xiaomi/venus-gcam/BoardConfigVendor.mk
