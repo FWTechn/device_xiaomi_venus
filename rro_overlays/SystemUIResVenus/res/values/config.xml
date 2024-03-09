@@ -45,5 +45,5 @@
 
     <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
          keyguardMaxRefreshRate. -->
-    <integer name="config_keyguardRefreshRate">120</integer>
+    <integer name="config_keyguardRefreshRate">60</integer>
 </resources>
