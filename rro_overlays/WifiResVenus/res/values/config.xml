@@ -19,4 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Mi 11</string>
+
+    <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
+    <string translatable="false" name="config_wifiP2pDeviceNamePrefix">Mi 11_</string>
 </resources>
